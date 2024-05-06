@@ -163,7 +163,7 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
 
                 <div className="grid xl:grid-cols-none grid-cols-2 xl:gap-0 gap-4 xl:mt-0 mt-4">
                     <div className="rounded-lg bgCard border-[0.8px] border-zinc-600 hover:border-blue-500 p-6 xl:mb-4">
-                        <h3 className="text-xl font-bold mb-4">Languages:</h3>
+                        <h3 className="text-xl text-white font-bold mb-4">Languages:</h3>
 
                         <div>
                             <Carousel plugins={[
@@ -186,7 +186,7 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
                     </div>
 
                     <div className="rounded-lg bgCard border-[0.8px] border-zinc-600 hover:border-blue-500 p-6">
-                        <h3 className="text-xl font-bold mb-4">Frameworks:</h3>
+                        <h3 className="text-xl text-white font-bold mb-4">Frameworks:</h3>
 
                         <div>
                             <Carousel plugins={[
