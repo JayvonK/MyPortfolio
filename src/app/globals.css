@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Ubuntu;
+  src: url(/Ubuntu.ttf);
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -74,4 +79,19 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.bgCard {
+  background-color: rgba(0, 0, 0, 0.664);
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.showdownBox {
+  box-shadow: 7px 7px rgb(255, 153, 0);;
+}
+
+.ubuntu {
+  font-family: Ubuntu;
 }
