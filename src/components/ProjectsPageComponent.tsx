@@ -113,7 +113,7 @@ const ProjectsPageComponent = () => {
                         <img className="sm:w-8 w-6 aspect-square object-cover" src="/images/github copy.svg" alt="" />
                     </a>
                 </div>
-                <p className='text-gray-300 lg:text-base text-sm mt-3'>A <span className='text-white font-bold'>fully responsive web app</span> that aims leverages the PokeApi, to display statistics about pokemon like a pokedex</p>
+                <p className='text-gray-300 lg:text-base text-sm mt-3'>A <span className='text-white font-bold'>fully responsive web app</span> that leverages the PokeApi, to display statistics about pokemon just like a pokedex</p>
                 <div className="flex justify-between mt-4">
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/react.svg" alt="" />
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/typescript.svg" alt="" />
