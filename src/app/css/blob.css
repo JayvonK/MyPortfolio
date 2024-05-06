@@ -1,0 +1,12 @@
+@keyframes rotate {
+  
+    50% {
+      scale: 1 1.5;
+    }
+  }
+  
+  .blobBg {
+    background: linear-gradient(to right,aquamarine,purple);
+    animation: rotate 20s infinite;
+    opacity: 0.8;
+  }
