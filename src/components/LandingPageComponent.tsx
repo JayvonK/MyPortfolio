@@ -132,7 +132,7 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
 
                             <div className="sm:pl-4 sm:mt-0 mt-4">
                                 <h3 className="text-white lg:text-2xl text-xl font-bold mb-1"><span className="text-orange-400">Strike</span> Showdown</h3>
-                                <p className="text-gray-300 mb-4 lg:text-base text-sm">Currently I am a team lead, guiding 2 other web developers to create a fullstack application aimed at the audience of bowlers, called "Strike Showdown"</p>
+                                <p className="text-gray-300 mb-4 lg:text-base text-sm">Currently I am a team lead, guiding 2 other web developers to create a fullstack application aimed at the audience of bowlers, called &quot;Strike Showdown&quot;</p>
                                 <button className="text-black font-semibold rounded-lg bg-white p-2 shadow-lg border hover:shadow-blue-500 hover:border-blue-500" onClick={props.openProjects}>View All Projects</button>
                             </div>
 
