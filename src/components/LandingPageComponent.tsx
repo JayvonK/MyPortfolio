@@ -64,7 +64,7 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
                 <div className="rounded-lg bgCard border-[0.8px] border-zinc-600 hover:border-blue-500 p-6 mb-4 xl:hidden block">
                     <h3 className="font-bold mb-3 lg:text-2xl text-xl text-white">About Me</h3>
                     <ul className="text-gray-300 lg:text-base text-sm">
-                        <li className="mb-3">I'm a 18 year old web developer from Stockton, CA</li>
+                        <li className="mb-3">I&apos;m a 18 year old web developer from Stockton, CA</li>
                         <li className="mb-3">I strive to become a full stack developer, however with my current skills I am more confident with front end development.</li>
                         <li className="mb-3">My tools of choice are:</li>
                         <ul className="list-inside list-disc lg:text-xl text-lg font-bold mb-4 text-white">
@@ -73,7 +73,7 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
                             <li>Tailwind CSS</li>
                             <li>VS Code</li>
                         </ul>
-                        <li>Outside of coding, I like to have hobbies that challenge me, for example I'm currently trying to get back into skateboarding</li>
+                        <li>Outside of coding, I like to have hobbies that challenge me, for example I&apos;m currently trying to get back into skateboarding</li>
                     </ul>
                 </div>
 
@@ -148,7 +148,7 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
                 <div className="rounded-lg bgCard border-[0.8px] border-zinc-600 hover:border-blue-500 p-6 mb-4 xl:block hidden">
                     <h3 className="font-bold mb-3 lg:text-2xl text-xl text-white">About Me</h3>
                     <ul>
-                        <li className="mb-3">I'm a 18 year old web developer from Stockton, CA</li>
+                        <li className="mb-3">I&apos;m a 18 year old web developer from Stockton, CA</li>
                         <li className="mb-3">I strive to become a full stack developer, however with my current skills I am more confident with front end development.</li>
                         <li className="mb-3">My tools of choice are:</li>
                         <ul className="list-inside list-disc text-xl font-bold mb-4">
@@ -157,7 +157,7 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
                             <li>Tailwind CSS</li>
                             <li>VS Code</li>
                         </ul>
-                        <li>Outside of coding, I like to have hobbies that challenge me, for example I'm currently trying to get back into skateboarding</li>
+                        <li>Outside of coding, I like to have hobbies that challenge me, for example I&apos;m currently trying to get back into skateboarding</li>
                     </ul>
                 </div>
 
