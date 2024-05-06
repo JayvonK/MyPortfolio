@@ -14,7 +14,7 @@ const ProjectsPageComponent = () => {
                     <p className='lg:text-2xl text-xl text-white mx-5'>|</p>
 
                     <a href="https://github.com/JayvonK/WeatherAppRebuild" target='_blank'>
-                        <img className="sm:w-8 w-6 aspect-square object-cover" src="/images/github.svg" alt="" />
+                        <img className="sm:w-8 w-6 aspect-square object-cover" src="/images/github copy.svg" alt="" />
                     </a>
                 </div>
 
@@ -38,7 +38,7 @@ const ProjectsPageComponent = () => {
                     <p className='lg:text-2xl text-xl text-white mx-5'>|</p>
 
                     <a href="https://github.com/JayvonK/RPSLS-Repo" target='_blank'>
-                        <img className="sm:w-8 w-6 aspect-square object-cover" src="/images/github.svg" alt="" />
+                        <img className="sm:w-8 w-6 aspect-square object-cover" src="/images/github copy.svg" alt="" />
                     </a>
                 </div>
 
@@ -62,7 +62,7 @@ const ProjectsPageComponent = () => {
                     <p className='lg:text-2xl text-xl text-white mx-5'>|</p>
 
                     <a href="https://github.com/JayvonK/Full-Stack---Strike-Showdown" target='_blank'>
-                        <img className="sm:w-8 w-6 aspect-square object-cover" src="/images/github.svg" alt="" />
+                        <img className="sm:w-8 w-6 aspect-square object-cover" src="/images/github copy.svg" alt="" />
                     </a>
                 </div>
 
@@ -86,7 +86,7 @@ const ProjectsPageComponent = () => {
                     <p className='lg:text-2xl text-xl text-white mx-5'>|</p>
 
                     <a href="https://github.com/JayvonK/HamsterHotel-Repo" target='_blank'>
-                        <img className="sm:w-8 w-6 aspect-square object-cover" src="/images/github.svg" alt="" />
+                        <img className="sm:w-8 w-6 aspect-square object-cover" src="/images/github copy.svg" alt="" />
                     </a>
                 </div>
 
@@ -110,7 +110,7 @@ const ProjectsPageComponent = () => {
                     <p className='lg:text-2xl text-xl text-white mx-5'>|</p>
 
                     <a href="https://github.com/JayvonK/PokeWeb-Repo" target='_blank'>
-                        <img className="sm:w-8 w-6 aspect-square object-cover" src="/images/github.svg" alt="" />
+                        <img className="sm:w-8 w-6 aspect-square object-cover" src="/images/github copy.svg" alt="" />
                     </a>
                 </div>
                 <p className='text-gray-300 lg:text-base text-sm mt-3'>A <span className='text-white font-bold'>fully responsive web app</span> that aims leverages the PokeApi, to display statistics about pokemon like a pokedex</p>
@@ -133,7 +133,7 @@ const ProjectsPageComponent = () => {
                     <p className='lg:text-2xl text-xl text-white mx-5'>|</p>
 
                     <a href="https://github.com/JayvonK/BestSandwichesAndSmoothies-Repo" target='_blank'>
-                        <img className="sm:w-8 w-6 aspect-square object-cover" src="/images/github.svg" alt="" />
+                        <img className="sm:w-8 w-6 aspect-square object-cover" src="/images/github copy.svg" alt="" />
                     </a>
                 </div>
                 

@@ -85,21 +85,21 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
                         <div className="md:block flex justify-between">
                             <div>
                                 <p className="text-gray-300 lg:text-base text-sm">Email:</p>
-                                <p className="text-white mb-2 lg:text-base text-sm">jaykhuth@gmail.com</p>
+                                <p className="text-yellow-500 mb-2 lg:text-base text-sm">jaykhuth@gmail.com</p>
                             </div>
 
                             <div>
                                 <p className="text-gray-300 lg:text-base text-sm">Number:</p>
-                                <p className="text-white mb-3 lg:text-base text-sm">2096623152</p>
+                                <p className="text-green-500 mb-3 lg:text-base text-sm">2096623152</p>
                             </div>
 
                             <div className="sm:block hidden">
                                 <p className="text-gray-300 lg:text-base text-sm">Socials:</p>
-                                <a className="text-white mb-1 underline lg:text-base text-sm" href="https://www.linkedin.com/in/jayvon-khuth-1363ab2a0/" target="_blank">LinkedIn</a>
+                                <a className="text-sky-500 mb-1 underline lg:text-base text-sm" href="https://www.linkedin.com/in/jayvon-khuth-1363ab2a0/" target="_blank">LinkedIn</a>
                                 <br />
-                                <a className="text-white mb-1 underline lg:text-base text-sm" href="https://discordapp.com/users/256992176125247489" target="_blank">Discord</a>
+                                <a className="text-blue-600 mb-1 underline lg:text-base text-sm" href="https://discordapp.com/users/256992176125247489" target="_blank">Discord</a>
                                 <br />
-                                <a className="text-white mb-1 underline lg:text-base text-sm" href="https://instagram.com/jayvon_khuth/" target="_blank">Instagram</a>
+                                <a className="text-fuchsia-500 mb-1 underline lg:text-base text-sm " href="https://instagram.com/jayvon_khuth/" target="_blank">Instagram</a>
                             </div>
 
                         </div>
@@ -110,7 +110,7 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
                             <br />
                             <a className="text-white mb-1 underline lg:text-base text-sm" href="https://discordapp.com/users/256992176125247489" target="_blank">Discord</a>
                             <br />
-                            <a className="text-white mb-1 underline lg:text-base text-sm" href="https://instagram.com/jayvon_khuth/" target="_blank">Instagram</a>
+                            <a className="text-fuchsia-500 mb-1 underline lg:text-base text-sm" href="https://instagram.com/jayvon_khuth/" target="_blank">Instagram</a>
                         </div>
                     </div>
 
@@ -131,7 +131,7 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
                             </div>
 
                             <div className="sm:pl-4 sm:mt-0 mt-4">
-                                <h3 className="text-white lg:text-2xl text-xl font-bold mb-1">Strike Showdown</h3>
+                                <h3 className="text-white lg:text-2xl text-xl font-bold mb-1"><span className="text-orange-400">Strike</span> Showdown</h3>
                                 <p className="text-gray-300 mb-4 lg:text-base text-sm">Currently I am a team lead, guiding 2 other web developers to create a fullstack application aimed at the audience of bowlers, called "Strike Showdown"</p>
                                 <button className="text-black font-semibold rounded-lg bg-white p-2 shadow-lg border hover:shadow-blue-500 hover:border-blue-500" onClick={props.openProjects}>View All Projects</button>
                             </div>
