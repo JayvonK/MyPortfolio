@@ -120,7 +120,9 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
                         <div className="grid sm:grid-cols-2 gap-4">
                             <div>
                                 <div className="hover:cursor-pointer">
-                                    <img src="/images/StrikeShowdown2.png" className="h-52 object-cover showdownBox border border-gray-500" alt="" />
+                                    <a href='https://full-stack-strike-showdown.vercel.app/' target='_blank'>
+                                        <img src="/images/StrikeShowdown2.png" className="h-52 object-cover showdownBox border border-gray-500" alt="" />
+                                    </a>
                                 </div>
                                 <div className="flex justify-between mt-10">
                                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/nextdotjs.svg" alt="" />
