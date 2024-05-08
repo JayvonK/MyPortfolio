@@ -95,3 +95,73 @@
 .ubuntu {
   font-family: Ubuntu;
 }
+
+.custom-span1 {
+  --i:12
+}
+
+.custom-span2 {
+  --i:13
+}
+
+.custom-span3 {
+  --i:14
+}
+
+.custom-span4 {
+  --i:15
+}
+
+.custom-span5 {
+  --i:16
+}
+
+.custom-span6 {
+  --i:17
+}
+
+.custom-span7 {
+  --i:18
+}
+
+.custom-span8 {
+  --i:19
+}
+
+.custom-span9 {
+  --i:20
+}
+
+.custom-span10 {
+  --i:21
+}
+
+.stars span {
+  width: 30px;
+  height: 30px;
+  background: yellow;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #bedc4f44,
+  0 0 50px white,
+  0 0 100px white;
+  animation:  animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+
+.stars span:nth-child(even) {
+  background: rgb(170, 7, 170);
+  box-shadow: 0 0 0 10px #b44fdc65,
+  0 0 50px rgb(221, 23, 221),
+  0 0 100px rgb(207, 40, 207);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0.3);
+  }
+
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+}
