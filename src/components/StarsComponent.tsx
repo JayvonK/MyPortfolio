@@ -6,7 +6,7 @@ const StarsComponent = () => {
 
     return (
         <>
-            <span className={customStyleArr[0]} ></span>
+            {/* <span className={customStyleArr[0]} ></span>
             <span className={customStyleArr[3]} ></span>
             <span className={customStyleArr[1]} ></span>
             <span className={customStyleArr[0]} ></span>
@@ -73,7 +73,7 @@ const StarsComponent = () => {
             <span className={customStyleArr[2]} ></span>
             <span className={customStyleArr[1]} ></span>
             <span className={customStyleArr[5]} ></span>
-            <span className={customStyleArr[9]} ></span>
+            <span className={customStyleArr[9]} ></span> */}
         </>
     )
 }

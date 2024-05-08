@@ -31,9 +31,7 @@ export default function Home() {
 
   return (
     <div className="flex justify-center relative overflow-hidden">
-      <div className="stars absolute flex min-w-full h-[120%] z-30">
-        <StarsComponent />
-      </div>
+
       <img src="/images/stars.jpg" className="absolute w-screen h-full z-10 object-cover top-0" />
       <div className="absolute w-screen h-full z-20 bg-black opacity-60"></div>
       <div className="min-h-screen relative z-40 2xl:w-[1300px] xl:w-[1150px] lg:w-[950px] md:w-[700px] sm:w-[600px] w-[345px]" onPointerMove={(e) => cursorMove(e)}>
@@ -42,7 +40,7 @@ export default function Home() {
 
         <div className="flex justify-center pt-8">
           {
-            projects ? (<ProjectsPageComponent />) : (<LandingPageComponent openProjects={openProjects}/>)
+            projects ? (<ProjectsPageComponent />) : (<LandingPageComponent openProjects={openProjects} />)
           }
         </div>
 

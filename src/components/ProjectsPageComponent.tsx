@@ -3,7 +3,7 @@ import React from 'react'
 const ProjectsPageComponent = () => {
     return (
         <div className='grid xl:grid-cols-3 md:grid-cols-2 gap-4'>
-            <div className='rounded-lg bgCard p-6 border-[0.8px] border-zinc-600 hover:border-blue-500'>
+            <div className='rounded-lg bgCard p-6 border-[0.8px] border-zinc-600 '>
                 <a href='https://weather-app-rebuild-one.vercel.app/' target='_blank'>
                     <img className='rounded-lg mb-3 sm:shadow-lg shadow-md hover:shadow-white' src="/images/weather.png" alt="" />
                 </a>
@@ -27,7 +27,7 @@ const ProjectsPageComponent = () => {
                 </div>
             </div>
 
-            <div className='rounded-lg bgCard p-6 border-[0.8px] border-zinc-600 hover:border-blue-500'>
+            <div className='rounded-lg bgCard p-6 border-[0.8px] border-zinc-600 '>
                 <a href='https://rpsls-game-beta.vercel.app/' target='_blank'>
                     <img className='rounded-lg mb-3 sm:shadow-lg shadow-md hover:shadow-purple-600' src="/images/rpsls.png" alt="" />
                 </a>
@@ -51,7 +51,7 @@ const ProjectsPageComponent = () => {
                 </div>
             </div>
 
-            <div className='rounded-lg bgCard p-6 border-[0.8px] border-zinc-600 hover:border-blue-500'>
+            <div className='rounded-lg bgCard p-6 border-[0.8px] border-zinc-600 '>
                 <a href='https://full-stack-strike-showdown.vercel.app/' target='_blank'>
                     <img className='rounded-lg mb-3 sm:shadow-lg shadow-md hover:shadow-orange-600' src="/images/StrikeShowdown3.png" alt="" />
                 </a>
@@ -75,7 +75,7 @@ const ProjectsPageComponent = () => {
                 </div>
             </div>
 
-            <div className='rounded-lg bgCard p-6 border-[0.8px] border-zinc-600 hover:border-blue-500'>
+            <div className='rounded-lg bgCard p-6 border-[0.8px] border-zinc-600 '>
                 <a href='https://khuthjhamsterhotel.vercel.app/' target='_blank'>
                     <img className='rounded-lg mb-3 sm:shadow-lg shadow-md hover:shadow-sky-600' src="/images/hamsterhotel.png" alt="" />
                 </a>
@@ -100,7 +100,7 @@ const ProjectsPageComponent = () => {
             </div>
 
 
-            <div className='rounded-lg bgCard p-6 border-[0.8px] border-zinc-600 hover:border-blue-500'>
+            <div className='rounded-lg bgCard p-6 border-[0.8px] border-zinc-600 '>
                 <a href='https://poke-web-react.vercel.app/' target='_blank'>
                     <img className='rounded-lg mb-3 sm:shadow-lg shadow-md hover:shadow-blue-700' src="/images/pokeweb.png" alt="" />
                 </a>
@@ -122,7 +122,7 @@ const ProjectsPageComponent = () => {
                 </div>
             </div>
 
-            <div className='rounded-lg bgCard p-6 border-[0.8px] border-zinc-600 hover:border-blue-500'>
+            <div className='rounded-lg bgCard p-6 border-[0.8px] border-zinc-600 '>
                 <a href='https://business-redesign-neon.vercel.app/' target='_blank'>
                     <img className='rounded-lg mb-3 sm:shadow-lg shadow-md hover:shadow-yellow-400' src="/images/bestsandwiches.png" alt="" />
                 </a>
