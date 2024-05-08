@@ -82,7 +82,7 @@
 }
 
 .bgCard {
-  background-color: rgba(0, 0, 0, 0.664);
+  background-color: rgba(0, 0, 0, 0.788);
   background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -101,39 +101,39 @@
 }
 
 .custom-span2 {
-  --i:13
-}
-
-.custom-span3 {
-  --i:14
-}
-
-.custom-span4 {
   --i:15
 }
 
-.custom-span5 {
-  --i:16
-}
-
-.custom-span6 {
-  --i:17
-}
-
-.custom-span7 {
-  --i:18
-}
-
-.custom-span8 {
+.custom-span3 {
   --i:19
 }
 
+.custom-span4 {
+  --i:21
+}
+
+.custom-span5 {
+  --i:28
+}
+
+.custom-span6 {
+  --i:25
+}
+
+.custom-span7 {
+  --i:31
+}
+
+.custom-span8 {
+  --i:26
+}
+
 .custom-span9 {
-  --i:20
+  --i:17
 }
 
 .custom-span10 {
-  --i:21
+  --i:36
 }
 
 .stars span {
@@ -150,10 +150,10 @@
 }
 
 .stars span:nth-child(even) {
-  background: rgb(170, 7, 170);
-  box-shadow: 0 0 0 10px #b44fdc65,
-  0 0 50px rgb(221, 23, 221),
-  0 0 100px rgb(207, 40, 207);
+  background: rgb(33, 122, 255);
+  box-shadow: 0 0 0 10px #4f80dc65,
+  0 0 50px white,
+  0 0 100px white;
 }
 
 @keyframes animate {
