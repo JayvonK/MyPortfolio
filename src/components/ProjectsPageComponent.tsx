@@ -28,12 +28,12 @@ const ProjectsPageComponent = () => {
             </div>
 
             <div className='rounded-lg bgCard p-6 border-[0.8px] border-zinc-600 '>
-                <a href='https://rpsls-game-beta.vercel.app/' target='_blank'>
+                <a href='https://rpsls-game-jade.vercel.app/' target='_blank'>
                     <img className='rounded-lg mb-3 sm:shadow-lg shadow-md hover:shadow-purple-600' src="/images/rpsls.png" alt="" />
                 </a>
 
                 <div className='flex'>
-                    <a className='lg:text-2xl text-xl font-bold text-white mb-3 underline hover:text-blue-500' href='https://rpsls-game-beta.vercel.app/' target='_blank'>RPSLS</a>
+                    <a className='lg:text-2xl text-xl font-bold text-white mb-3 underline hover:text-blue-500' href='https://rpsls-game-jade.vercel.app/' target='_blank'>RPSLS</a>
 
                     <p className='lg:text-2xl text-xl text-white mx-5'>|</p>
 
