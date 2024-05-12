@@ -32,8 +32,8 @@ export default function Home() {
   return (
     <div className="flex justify-center relative overflow-hidden">
 
-      <img src="/images/stars.jpg" className="absolute w-screen h-full z-10 object-cover top-0" />
-      <div className="absolute w-screen h-full z-20 bg-black opacity-60"></div>
+      {/* <img src="" className="absolute w-screen h-full z-10 object-cover top-0" /> */}
+      <div className="absolute w-screen h-full z-20 bg-black"></div>
       <div className="min-h-screen relative z-40 2xl:w-[1300px] xl:w-[1150px] lg:w-[950px] md:w-[700px] sm:w-[600px] w-[345px]" onPointerMove={(e) => cursorMove(e)}>
 
         <p className="text-white font-bold text-2xl pt-8 hover:cursor-pointer hover:text-blue-500 inline-block" onClick={closeProjects}>{projects ? "Go Back" : ""}</p>
