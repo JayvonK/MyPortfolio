@@ -36,10 +36,10 @@ export default function Home() {
       {/* <img src="" className="absolute w-screen h-full z-10 object-cover top-0" /> */}
       {/* <div className="absolute w-screen h-full z-20 bg-black"></div> */}
       <ParticlesComponent />
-      
-      <div className="min-h-screen relative z-40 2xl:w-[1300px] xl:w-[1150px] lg:w-[950px] md:w-[700px] sm:w-[600px] w-[345px]">
 
-        <p className="text-white font-bold text-2xl pt-8 hover:cursor-pointer hover:text-blue-500 inline-block" onClick={close}>{!main ? "Go Back" : ""}</p>
+      <div className="min-h-screen relative z-40 2xl:w-[1300px] xl:w-[1150px] lg:w-[950px] md:w-[700px] sm:w-[600px] w-[345px] flex flex-col justify-center">
+
+        {!main && <button className="text-black sm:text-2xl text-lg font-semibold rounded-lg bg-white p-2 shadow-lg border hover:shadow-blue-500 mt-8 sm:w-36 w-28" onClick={close}>Go Back</button>}
 
         <div className="pt-8">
           {
@@ -47,7 +47,7 @@ export default function Home() {
           }
 
           {
-            main && <LandingPageComponent openProjects={openProjects} openLang={openLang}/>
+            main && <LandingPageComponent openProjects={openProjects} openLang={openLang} />
           }
 
           {
@@ -56,8 +56,8 @@ export default function Home() {
         </div>
 
       </div>
-      
-      
+
+
     </div >
 
   );
