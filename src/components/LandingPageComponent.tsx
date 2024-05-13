@@ -85,12 +85,12 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
                         <div className="md:block flex justify-between">
 
                             <div>
-                                <p className="text-gray-300 lg:text-base text-sm">Email:</p>
+                                <p className="text-white lg:text-base text-sm">Email:</p>
                                 <p className="text-white font-bold mb-2 lg:text-base text-sm">jaykhuth@gmail.com</p>
                             </div>
 
                             <div>
-                                <p className="text-gray-300 lg:text-base text-sm">Number:</p>
+                                <p className="text-white lg:text-base text-sm">Number:</p>
                                 <p className="text-white font-bold mb-3 lg:text-base text-sm">2096623152</p>
                             </div>
 
@@ -98,7 +98,7 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
 
                                 <div className="flex">
                                     <img className="h-6 mr-2" src="/images/socialblade.svg" alt="" />
-                                    <p className="text-gray-300 lg:text-base text-sm mb-3">Socials:</p>
+                                    <p className="text-white lg:text-base text-sm mb-3">Socials:</p>
                                 </div>
 
                                 <div className="grid grid-flow-col">
@@ -112,7 +112,7 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
                         </div>
 
                         <div className="sm:hidden block">
-                            <p className="text-gray-300 lg:text-base text-sm">Socials:</p>
+                            <p className="text-white lg:text-base text-sm">Socials:</p>
                             <a className="text-white mb-1 underline lg:text-base text-sm" href="https://www.linkedin.com/in/jayvon-khuth-1363ab2a0/" target="_blank">LinkedIn</a>
                             <br />
                             <a className="text-white mb-1 underline lg:text-base text-sm" href="https://discordapp.com/users/256992176125247489" target="_blank">Discord</a>

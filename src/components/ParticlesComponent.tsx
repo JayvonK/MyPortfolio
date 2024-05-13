@@ -89,7 +89,7 @@ const ParticlesComponent = () => {
             default: "out",
           },
           random: true,
-          speed: 1,
+          speed: 0.5,
           straight: false,
         },
         number: {
@@ -97,7 +97,7 @@ const ParticlesComponent = () => {
             enable: true,
             value_area: 800
           },
-          value: 160,
+          value: 100,
         },
         opacity: {
           value: 0.6,
