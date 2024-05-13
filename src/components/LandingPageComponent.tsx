@@ -35,7 +35,7 @@ const LandingPageComponent = (props: { openProjects: () => void, openLang: () =>
                     <div className="flex justify-between w-full">
                         <div className="flex flex-col justify-between lg:max-w-[60%] sm:max-w-[55%]">
                             <div>
-                                <p className="mb-1 text-blue-500">Hello World!</p>
+                                <p className="mb-1 font-bold text-lg text-blue-500">Hello World!</p>
                                 <p className="lg:text-2xl text-xl text-gray-300 mb-8">Hi, I am <span className="font-bold text-white">Jayvon Khuth</span>, a web developer who loves enhancing their skills in software development, and hopes to one day make a huge & long lasting impact</p>
                             </div>
 
@@ -80,7 +80,7 @@ const LandingPageComponent = (props: { openProjects: () => void, openLang: () =>
                             <li>Tailwind CSS</li>
                             <li>VS Code</li>
                         </ul>
-                        <li>Outside of coding, I like to have hobbies that challenge me, for example I&apos;m currently trying to get back into skateboarding</li>
+                        <li>Outside of coding, I love having challenging hobbies, for example I&apos;m currently trying to get back into skateboarding</li>
                     </ul>
                 </div>
 
@@ -172,7 +172,7 @@ const LandingPageComponent = (props: { openProjects: () => void, openLang: () =>
                             <li>Tailwind CSS</li>
                             <li>VS Code</li>
                         </ul>
-                        <li>Outside of coding, I like to have hobbies that challenge me, for example I&apos;m currently trying to get back into skateboarding</li>
+                        <li>Outside of coding, I love having challenging hobbies, for example I&apos;m currently trying to get back into skateboarding</li>
                     </ul>
                 </div>
 
