@@ -166,7 +166,7 @@ const LandingPageComponent = (props: { openProjects: () => void, openLang: () =>
                         <li className="mb-3">I&apos;m a 18 year old web developer from Stockton, CA</li>
                         <li className="mb-3">I strive to become a full stack developer, however with my current skills I am more confident with front end development.</li>
                         <li className="mb-3">My tools of choice are:</li>
-                        <ul className="list-inside list-disc text-xl font-bold mb-4">
+                        <ul className="list-inside list-disc text-xl font-bold mb-4 text-white">
                             <li>JavaScript</li>
                             <li>React/Next.JS</li>
                             <li>Tailwind CSS</li>
@@ -176,9 +176,12 @@ const LandingPageComponent = (props: { openProjects: () => void, openLang: () =>
                     </ul>
                 </div>
 
-                <div className="grid xl:grid-cols-none grid-cols-2 xl:gap-0 gap-4 xl:mt-0 mt-4">
-                    <div className="rounded-lg bgCard border border-zinc-600 hover:border-blue-500 p-6 xl:mb-4 hover:cursor-pointer" onClick={props.openLang}>
-                        <h3 className="text-xl text-white font-bold mb-4">Languages</h3>
+                <div className="grid xl:grid-cols-none sm:grid-cols-2 xl:gap-0 gap-4 xl:mt-0 mt-4">
+                    <div className="rounded-lg bgCard border border-zinc-600 p-6 xl:mb-4">
+                    <div className="flex justify-between">
+                           <h3 className="text-xl text-white font-bold mb-4">Languages</h3> 
+                           <button className="text-black font-semibold rounded-md bg-white px-2 shadow-lg border hover:shadow-blue-500 h-7 " onClick={props.openLang}>View All</button>
+                        </div>
 
                         <div>
                             <Carousel plugins={[
@@ -200,8 +203,12 @@ const LandingPageComponent = (props: { openProjects: () => void, openLang: () =>
 
                     </div>
 
-                    <div className="rounded-lg bgCard border border-zinc-600 hover:border-blue-500 p-6 hover:cursor-pointer" onClick={props.openLang}>
-                        <h3 className="text-xl text-white font-bold mb-4">Frameworks</h3>
+                    <div className="rounded-lg bgCard border border-zinc-600 p-6">
+
+                        <div className="flex justify-between">
+                           <h3 className="text-xl text-white font-bold mb-4">Frameworks</h3> 
+                           <button className="text-black font-semibold rounded-md bg-white px-2 shadow-lg border hover:shadow-blue-500 h-7 " onClick={props.openLang}>View All</button>
+                        </div>
 
                         <div>
                             <Carousel plugins={[

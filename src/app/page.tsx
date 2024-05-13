@@ -6,6 +6,7 @@ import LandingPageComponent from "@/components/LandingPageComponent";
 import ProjectsPageComponent from "@/components/ProjectsPageComponent";
 import StarsComponent from "@/components/StarsComponent";
 import ParticlesComponent from "@/components/ParticlesComponent";
+import LangPageComponent from "@/components/LangPageComponent";
 
 export default function Home() {
 
@@ -40,13 +41,17 @@ export default function Home() {
 
         <p className="text-white font-bold text-2xl pt-8 hover:cursor-pointer hover:text-blue-500 inline-block" onClick={close}>{!main ? "Go Back" : ""}</p>
 
-        <div className="flex justify-center pt-8">
+        <div className="pt-8">
           {
             projects && <ProjectsPageComponent />
           }
 
           {
             main && <LandingPageComponent openProjects={openProjects} openLang={openLang}/>
+          }
+
+          {
+            lang && <LangPageComponent />
           }
         </div>
 
