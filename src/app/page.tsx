@@ -4,7 +4,6 @@ import React from "react";
 import { use, useState } from "react";
 import LandingPageComponent from "@/components/LandingPageComponent";
 import ProjectsPageComponent from "@/components/ProjectsPageComponent";
-import StarsComponent from "@/components/StarsComponent";
 import ParticlesComponent from "@/components/ParticlesComponent";
 import LangPageComponent from "@/components/LangPageComponent";
 
