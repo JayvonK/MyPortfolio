@@ -60,6 +60,15 @@ const ParticlesComponent = () => {
           grab: {
             distance: 200,
           },
+          bubble: {
+            distance: 250,
+            size: 0,
+            opacity: 0,
+            duration: 2
+          },
+          repulse: {
+            distance: 400
+          }
         },
       },
       particles: {
@@ -77,26 +86,32 @@ const ParticlesComponent = () => {
           direction: MoveDirection.none,
           enable: true,
           outModes: {
-            default: "bounce",
+            default: "out",
           },
-          random: false,
-          speed: 2,
+          random: true,
+          speed: 1,
           straight: false,
         },
         number: {
           density: {
             enable: true,
+            value_area: 800
           },
-          value: 50,
+          value: 160,
         },
         opacity: {
-          value: 1.0,
+          value: 0.6,
         },
         shape: {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: 1, max: 3 },
+          anim: {
+            speed: 4,
+            size_min: 0.3,
+            sync: false
+          }
         },
       },
       detectRetina: true,
