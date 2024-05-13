@@ -5,19 +5,9 @@ import { use, useState } from "react";
 import LandingPageComponent from "@/components/LandingPageComponent";
 import ProjectsPageComponent from "@/components/ProjectsPageComponent";
 import StarsComponent from "@/components/StarsComponent";
+import ParticlesComponent from "@/components/ParticlesComponent";
 
 export default function Home() {
-  const [blobTop, setBlobTop] = useState<number>(0);
-  const [blobLeft, setBlobLeft] = useState<number>(0);
-  const [blobPosition, setBlobPosition] = useState<string>('top: 0px; left: 0px');
-  const cursorMove = (e: React.PointerEvent<HTMLDivElement>) => {
-    const x = e.clientX;
-    const y = e.clientY;
-    setTimeout(() => {
-      setBlobTop(y);
-      setBlobLeft(x);
-    }, 250)
-  }
 
   const [projects, setProjects] = useState<boolean>(false);
 
@@ -30,11 +20,13 @@ export default function Home() {
   }
 
   return (
-    <div className="flex justify-center relative overflow-hidden">
+    <div className="flex justify-center relative overflow-hidden bg-black">
 
       {/* <img src="" className="absolute w-screen h-full z-10 object-cover top-0" /> */}
-      <div className="absolute w-screen h-full z-20 bg-black"></div>
-      <div className="min-h-screen relative z-40 2xl:w-[1300px] xl:w-[1150px] lg:w-[950px] md:w-[700px] sm:w-[600px] w-[345px]" onPointerMove={(e) => cursorMove(e)}>
+      {/* <div className="absolute w-screen h-full z-20 bg-black"></div> */}
+      <ParticlesComponent />
+      
+      <div className="min-h-screen relative z-40 2xl:w-[1300px] xl:w-[1150px] lg:w-[950px] md:w-[700px] sm:w-[600px] w-[345px]">
 
         <p className="text-white font-bold text-2xl pt-8 hover:cursor-pointer hover:text-blue-500 inline-block" onClick={closeProjects}>{projects ? "Go Back" : ""}</p>
 
@@ -45,6 +37,8 @@ export default function Home() {
         </div>
 
       </div>
+      
+      
     </div >
 
   );
