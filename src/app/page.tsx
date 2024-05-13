@@ -10,13 +10,23 @@ import ParticlesComponent from "@/components/ParticlesComponent";
 export default function Home() {
 
   const [projects, setProjects] = useState<boolean>(false);
+  const [main, setMain] = useState<boolean>(true);
+  const [lang, setLang] = useState<boolean>(false);
 
   const openProjects = () => {
     setProjects(true);
+    setMain(false);
   }
 
-  const closeProjects = () => {
+  const close = () => {
     setProjects(false);
+    setLang(false)
+    setMain(true);
+  }
+
+  const openLang = () => {
+    setLang(true);
+    setMain(false);
   }
 
   return (
@@ -28,11 +38,15 @@ export default function Home() {
       
       <div className="min-h-screen relative z-40 2xl:w-[1300px] xl:w-[1150px] lg:w-[950px] md:w-[700px] sm:w-[600px] w-[345px]">
 
-        <p className="text-white font-bold text-2xl pt-8 hover:cursor-pointer hover:text-blue-500 inline-block" onClick={closeProjects}>{projects ? "Go Back" : ""}</p>
+        <p className="text-white font-bold text-2xl pt-8 hover:cursor-pointer hover:text-blue-500 inline-block" onClick={close}>{!main ? "Go Back" : ""}</p>
 
         <div className="flex justify-center pt-8">
           {
-            projects ? (<ProjectsPageComponent />) : (<LandingPageComponent openProjects={openProjects} />)
+            projects && <ProjectsPageComponent />
+          }
+
+          {
+            main && <LandingPageComponent openProjects={openProjects} openLang={openLang}/>
           }
         </div>
 

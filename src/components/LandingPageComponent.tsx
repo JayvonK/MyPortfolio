@@ -1,6 +1,6 @@
 'use client'
 import BlobComponent from "@/components/BlobComponent";
-import React from "react";
+import React, { useEffect } from "react";
 import { use, useState } from "react";
 import Autoplay from "embla-carousel-autoplay"
 import {
@@ -11,20 +11,27 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 
-const LandingPageComponent = (props: { openProjects: () => void }) => {
+const LandingPageComponent = (props: { openProjects: () => void, openLang: () => void }) => {
     const iconArr = [['/images/javascript.svg', '/images/typescript.svg', '/images/csharp.svg'], ['/images/mysql.svg', '/images/html5.svg', '/images/css3.svg']]
     const frameworkArr = [['/images/react.svg', '/images/react-native-1.svg', '/images/bootstrap.svg', '/images/tailwindcss.svg'], ['/images/unity.svg', '/images/dotnet.svg', '/images/nextdotjs.svg', '']]
+    const [fadeIn, setFadeIn] = useState<string>("opacity-0");
+
+    useEffect(() => {
+        setTimeout(() => {
+            setFadeIn("opacity-100")
+        }, 500)
+    }, [])
 
     return (
-        <div className="grid xl:grid-cols-[75%_25%] mb-4">
+        <div className={"grid xl:grid-cols-[75%_25%] mb-4"}>
             <div className="grid grid-flow-row xl:mr-4">
 
-                <div className="rounded-lg bgCard border-[0.8px] border-zinc-600  mb-4 sm:hidden flex justify-center ">
+                <div className="rounded-lg bgCard border border-zinc-600  mb-4 sm:hidden flex justify-center ">
                     <img className="w-[80%] h-40 object-cover object-top" src="/images/Jayvon1.png" alt="" />
                 </div>
 
                 {/* Row 1 */}
-                <div className="min-h-56 rounded-lg bgCard p-6 border-[0.8px] border-zinc-600  mb-4 ">
+                <div className="min-h-56 rounded-lg bgCard p-6 border border-zinc-600  mb-4 ">
                     <div className="flex justify-between w-full">
                         <div className="flex flex-col justify-between lg:max-w-[60%] sm:max-w-[55%]">
                             <div>
@@ -61,7 +68,7 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
 
                 {/* About me hidden */}
 
-                <div className="rounded-lg bgCard border-[0.8px] border-zinc-600  p-6 mb-4 xl:hidden block">
+                <div className="rounded-lg bgCard border border-zinc-600  p-6 mb-4 xl:hidden block">
                     <h3 className="font-bold mb-3 lg:text-2xl text-xl text-white">About Me</h3>
                     <ul className="text-gray-300 lg:text-base text-sm">
                         <li className="mb-3">I&apos;m a 18 year old web developer from Stockton, CA</li>
@@ -79,55 +86,45 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
 
                 {/* Row 2 */}
                 <div className="w-full md:flex">
-                    <div className="md:w-[40%] rounded-lg bgCard border-[0.8px] border-zinc-600  p-6 md:mr-4 md:mb-0 mb-4">
+                    <div className="md:w-[40%] sm:block hidden rounded-lg bgCard border border-zinc-600  p-6 md:mr-4 md:mb-0 mb-4">
                         <h3 className="font-bold mb-3 lg:text-2xl text-xl text-white">Contact Me</h3>
                         <p className="text-gray-300 mb-3 lg:text-base text-sm">Feel free contact me through email/number or through socials</p>
                         <div className="md:block flex justify-between">
 
                             <div>
                                 <p className="text-white lg:text-base text-sm">Email:</p>
-                                <p className="text-white font-bold mb-2 lg:text-base text-sm">jaykhuth@gmail.com</p>
+                                <p className="text-white font-bold mb-2 lg:text-lg text-base">jaykhuth@gmail.com</p>
                             </div>
 
                             <div>
                                 <p className="text-white lg:text-base text-sm">Number:</p>
-                                <p className="text-white font-bold mb-3 lg:text-base text-sm">2096623152</p>
+                                <p className="text-white font-bold mb-3 lg:text-lg text-base">2096623152</p>
                             </div>
 
                             <div className="sm:block hidden">
 
                                 <div className="flex">
-                                    <img className="h-6 mr-2" src="/images/socialblade.svg" alt="" />
+                                    {/* <img className="h-6 mr-2" src="/images/socialblade.svg" alt="" /> */}
                                     <p className="text-white lg:text-base text-sm mb-3">Socials:</p>
                                 </div>
 
-                                <div className="grid grid-flow-col">
-                                    <img className="w-8 h-8" src="/images/linkedin copy.svg" alt="" />
-                                    <img className="w-8 h-8" src="/images/instagram.svg" alt="" />
-                                    <img className="w-8 h-8" src="/images/discord.svg" alt="" />
+                                <div className="grid grid-flow-col gap-4">
+                                    <a href="https://www.linkedin.com/in/jayvon-khuth-1363ab2a0/" target="_blank"><img className="w-8 h-8" src="/images/linkedin copy.svg" alt="" /></a>
+                                    <a href="https://instagram.com/jayvon_khuth/" target="_blank"><img className="w-8 h-8" src="/images/instagram.svg" alt="" /></a>
+                                    <a href="https://discordapp.com/users/256992176125247489" target="_blank"><img className="w-8 h-8" src="/images/discord.svg" alt="" /></a>
                                 </div>
 
                             </div>
-
-                        </div>
-
-                        <div className="sm:hidden block">
-                            <p className="text-white lg:text-base text-sm">Socials:</p>
-                            <a className="text-white mb-1 underline lg:text-base text-sm" href="https://www.linkedin.com/in/jayvon-khuth-1363ab2a0/" target="_blank">LinkedIn</a>
-                            <br />
-                            <a className="text-white mb-1 underline lg:text-base text-sm" href="https://discordapp.com/users/256992176125247489" target="_blank">Discord</a>
-                            <br />
-                            <a className="text-fuchsia-500 mb-1 underline lg:text-base text-sm" href="https://instagram.com/jayvon_khuth/" target="_blank">Instagram</a>
                         </div>
                     </div>
 
-                    <div className="rounded-lg bgCard border-[0.8px] w-full border-zinc-600  p-6">
+                    <div className="rounded-lg bgCard border w-full border-zinc-600  p-6">
 
                         <div className="flex">
                             <h3 className="font-bold mb-3 lg:text-2xl text-xl text-white">Current Project</h3>
                             <div className="relative ml-2">
-                                <div className="bg-green-500 animate-[ping_2s_infinite] rounded-full h-4 w-4 absolute"></div>
-                                <div className="bg-green-500 bg-opacity-85 rounded-full h-4 w-4"></div>
+                                <div className="bg-green-400 animate-[ping_2s_infinite] rounded-full h-[14px] w-[14px] absolute"></div>
+                                <div className="bg-green-400 bg-opacity-85 rounded-full h-[14px] w-[14px]"></div>
                             </div>
                         </div>
 
@@ -163,7 +160,7 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
 
 
             <div className="text-gray-300">
-                <div className="rounded-lg bgCard border-[0.8px] border-zinc-600  p-6 mb-4 xl:block hidden">
+                <div className="rounded-lg bgCard border border-zinc-600  p-6 mb-4 xl:block hidden">
                     <h3 className="font-bold mb-3 lg:text-2xl text-xl text-white">About Me</h3>
                     <ul>
                         <li className="mb-3">I&apos;m a 18 year old web developer from Stockton, CA</li>
@@ -180,8 +177,8 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
                 </div>
 
                 <div className="grid xl:grid-cols-none grid-cols-2 xl:gap-0 gap-4 xl:mt-0 mt-4">
-                    <div className="rounded-lg bgCard border-[0.8px] border-zinc-600  p-6 xl:mb-4">
-                        <h3 className="text-xl text-white font-bold mb-4">Languages:</h3>
+                    <div className="rounded-lg bgCard border border-zinc-600 hover:border-blue-500 p-6 xl:mb-4 hover:cursor-pointer" onClick={props.openLang}>
+                        <h3 className="text-xl text-white font-bold mb-4">Languages</h3>
 
                         <div>
                             <Carousel plugins={[
@@ -203,8 +200,8 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
 
                     </div>
 
-                    <div className="rounded-lg bgCard border-[0.8px] border-zinc-600  p-6">
-                        <h3 className="text-xl text-white font-bold mb-4">Frameworks:</h3>
+                    <div className="rounded-lg bgCard border border-zinc-600 hover:border-blue-500 p-6 hover:cursor-pointer" onClick={props.openLang}>
+                        <h3 className="text-xl text-white font-bold mb-4">Frameworks</h3>
 
                         <div>
                             <Carousel plugins={[
@@ -230,6 +227,52 @@ const LandingPageComponent = (props: { openProjects: () => void }) => {
                 </div>
 
 
+                <div className="sm:hidden block rounded-lg bgCard border border-zinc-600  p-6 md:mr-4 md:mb-0 my-4">
+                    <h3 className="font-bold mb-3 lg:text-2xl text-xl text-white">Contact Me</h3>
+                    <p className="text-gray-300 mb-3 lg:text-base text-sm">Feel free contact me through email/number or through socials</p>
+                    <div className="md:block flex justify-between">
+
+                        <div>
+                            <p className="text-white lg:text-base text-sm">Email:</p>
+                            <p className="text-white font-bold mb-2 lg:text-lg text-base">jaykhuth@gmail.com</p>
+                        </div>
+
+                        <div>
+                            <p className="text-white lg:text-base text-sm">Number:</p>
+                            <p className="text-white font-bold mb-3 lg:text-lg text-base">2096623152</p>
+                        </div>
+
+                        <div className="sm:block hidden">
+
+                            <div className="flex">
+                                {/* <img className="h-6 mr-2" src="/images/socialblade.svg" alt="" /> */}
+                                <p className="text-white lg:text-base text-sm mb-3">Socials:</p>
+                            </div>
+
+                            <div className="grid grid-flow-col">
+                                <a href="https://www.linkedin.com/in/jayvon-khuth-1363ab2a0/" target="_blank"><img className="w-8 h-8" src="/images/linkedin copy.svg" alt="" /></a>
+                                <a href="https://instagram.com/jayvon_khuth/" target="_blank"><img className="w-8 h-8" src="/images/instagram.svg" alt="" /></a>
+                                <a href="https://discordapp.com/users/256992176125247489" target="_blank"><img className="w-8 h-8" src="/images/discord.svg" alt="" /></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div className="sm:hidden block">
+                        <div className="flex">
+                            {/* <img className="h-6 mr-2" src="/images/socialblade.svg" alt="" /> */}
+                            <p className="text-white lg:text-base text-sm mb-3">Socials:</p>
+                        </div>
+
+                        <div className="grid grid-flow-col">
+                            <a href="https://www.linkedin.com/in/jayvon-khuth-1363ab2a0/" target="_blank"><img className="w-8 h-8" src="/images/linkedin copy.svg" alt="" /></a>
+                            <a href="https://instagram.com/jayvon_khuth/" target="_blank"><img className="w-8 h-8" src="/images/instagram.svg" alt="" /></a>
+                            <a href="https://discordapp.com/users/256992176125247489" target="_blank"><img className="w-8 h-8" src="/images/discord.svg" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
