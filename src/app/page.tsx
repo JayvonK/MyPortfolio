@@ -1,5 +1,4 @@
 'use client'
-import BlobComponent from "@/components/BlobComponent";
 import React from "react";
 import { use, useState } from "react";
 import LandingPageComponent from "@/components/LandingPageComponent";

@@ -30,35 +30,29 @@ const ParticlesComponent = () => {
           value: "#000000",
         },
       },
-      fpsLimit: 60,
+      fpsLimit: 30,
       interactivity: {
         events: {
-          onClick: {
-            enable: true,
-            mode: "repulse",
-          },
+          // onClick: {
+          //   enable: true,
+          //   mode: "repulse",
+          // },
           onHover: {
             enable: true,
             mode: "bubble",
           },
         },
         modes: {
-          push: {
-            distance: 200,
-            quantity: 4,
-          },
-          grab: {
-            distance: 200,
-          },
           bubble: {
             distance: 250,
             size: 0,
             opacity: 0,
             duration: 2
-          },
-          repulse: {
-            distance: 400
           }
+          // ,
+          // repulse: {
+          //   distance: 400
+          // }
         },
       },
       particles: {
@@ -68,7 +62,7 @@ const ParticlesComponent = () => {
         links: {
           color: "#ffffff",
           distance: 15,
-          enable: true,
+          enable: false,
           opacity: 0.4,
           width: 1,
         },
@@ -87,7 +81,7 @@ const ParticlesComponent = () => {
             enable: true,
             value_area: 800
           },
-          value: 135,
+          value: 100,
         },
         opacity: {
           value: 0.6,
@@ -96,12 +90,7 @@ const ParticlesComponent = () => {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 3 },
-          anim: {
-            speed: 4,
-            size_min: 0.3,
-            sync: false
-          }
+          value: { min: 1, max: 3 }
         },
       },
       detectRetina: true,

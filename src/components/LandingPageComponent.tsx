@@ -1,5 +1,4 @@
 'use client'
-import BlobComponent from "@/components/BlobComponent";
 import React, { useEffect } from "react";
 import { use, useState } from "react";
 import Autoplay from "embla-carousel-autoplay"
