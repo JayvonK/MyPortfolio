@@ -6,7 +6,7 @@ import {
   MoveDirection,
   OutMode,
 } from "@tsparticles/engine";
-import { loadSlim } from "@tsparticles/slim"; 
+import { loadSlim } from "@tsparticles/slim";
 
 const ParticlesComponent = () => {
   const [init, setInit] = useState(false);
