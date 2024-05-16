@@ -177,9 +177,9 @@ const LandingPageComponent = (props: { openProjects: () => void, openLang: () =>
 
                 <div className="grid xl:grid-cols-none sm:grid-cols-2 xl:gap-0 gap-4 xl:mt-0 mt-4">
                     <div className="rounded-lg bgCard border border-zinc-600 p-6 xl:mb-4">
-                    <div className="flex justify-between">
-                           <h3 className="text-xl text-white font-bold mb-4">Languages</h3> 
-                           <button className="text-black font-semibold rounded-md bg-white px-2 shadow-lg border hover:shadow-blue-500 h-7 " onClick={props.openLang}>View All</button>
+                        <div className="flex justify-between">
+                            <h3 className="text-xl text-white font-bold mb-4">Languages</h3>
+                            <button className="text-black font-semibold rounded-md bg-white px-2 shadow-lg border hover:shadow-blue-500 h-7 " onClick={props.openLang}>View All</button>
                         </div>
 
                         <div>
@@ -205,8 +205,8 @@ const LandingPageComponent = (props: { openProjects: () => void, openLang: () =>
                     <div className="rounded-lg bgCard border border-zinc-600 p-6">
 
                         <div className="flex justify-between">
-                           <h3 className="text-xl text-white font-bold mb-4">Frameworks</h3> 
-                           <button className="text-black font-semibold rounded-md bg-white px-2 shadow-lg border hover:shadow-blue-500 h-7 " onClick={props.openLang}>View All</button>
+                            <h3 className="text-xl text-white font-bold mb-4">Frameworks</h3>
+                            <button className="text-black font-semibold rounded-md bg-white px-2 shadow-lg border hover:shadow-blue-500 h-7 " onClick={props.openLang}>View All</button>
                         </div>
 
                         <div>
