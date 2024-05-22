@@ -22,6 +22,7 @@ const ProjectCardComponent = (props: { projectImg: string, link: string, githubL
                 <img className={`rounded-lg mb-3 sm:shadow-lg shadow-md hover:shadow-${props.color}`} src="/images/weather.png" alt="" />
             </a>
 
+
             <div className='flex'>
 
                 <a className={`lg:text-2xl text-xl font-bold text-gray-200 mb-3 underline hover:text-${props.color === "white" ? "blue-500" : props.color}`} href={props.link} target='_blank'>{props.name}</a>
