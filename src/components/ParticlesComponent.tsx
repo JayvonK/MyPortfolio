@@ -4,7 +4,6 @@ import {
   type Container,
   type ISourceOptions,
   MoveDirection,
-  OutMode,
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 
@@ -81,7 +80,7 @@ const ParticlesComponent = () => {
             enable: true,
             value_area: 800
           },
-          value: 100,
+          value: 75,
         },
         opacity: {
           value: 0.6,
