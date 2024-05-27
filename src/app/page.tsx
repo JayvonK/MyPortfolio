@@ -41,11 +41,11 @@ export default function Home() {
 
         <div className="pt-8">
           {
-            projects && <ProjectsPageComponent />
+            main && <LandingPageComponent openProjects={openProjects} openLang={openLang} />
           }
 
           {
-            main && <LandingPageComponent openProjects={openProjects} openLang={openLang} />
+            projects && <ProjectsPageComponent />
           }
 
           {
