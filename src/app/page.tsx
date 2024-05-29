@@ -40,6 +40,7 @@ export default function Home() {
         {!main && <button className="text-black sm:text-2xl text-lg font-semibold rounded-lg bg-white p-2 shadow-lg border hover:shadow-blue-500 mt-8 sm:w-36 w-28" onClick={close}>Go Back</button>}
 
         <div className="pt-8">
+
           {
             main && <LandingPageComponent openProjects={openProjects} openLang={openLang} />
           }
@@ -51,12 +52,11 @@ export default function Home() {
           {
             lang && <LangPageComponent />
           }
+
         </div>
 
       </div>
 
-
     </div >
-
   );
 }
