@@ -33,6 +33,7 @@ export default function Home() {
 
       {/* <img src="" className="absolute w-screen h-full z-10 object-cover top-0" /> */}
       {/* <div className="absolute w-screen h-full z-20 bg-black"></div> */}
+      
       <ParticlesComponent />
 
       <div className="min-h-screen relative z-40 2xl:w-[1300px] xl:w-[1150px] lg:w-[950px] md:w-[700px] sm:w-[600px] w-[345px] flex flex-col justify-center">
