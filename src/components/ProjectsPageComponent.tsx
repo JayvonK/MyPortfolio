@@ -3,7 +3,7 @@ import ProjectCardComponent from './ProjectCardComponent'
 
 const ProjectsPageComponent = () => {
     return (
-        <div className='grid xl:grid-cols-3 md:grid-cols-2 gap-4 mb-8'>
+        <div className='grid xl:grid-cols-3 md:grid-cols-2 gap-4 mb-8 transition-opacity ease-in fade-in-10'>
             <div className='rounded-lg bgCard p-6 border border-zinc-600 '>
                 <a href='https://weather-app-rebuild-one.vercel.app/' target='_blank'>
                     <img className='rounded-lg mb-3 sm:shadow-lg shadow-md hover:shadow-white' src="/images/weather.png" alt="" />
