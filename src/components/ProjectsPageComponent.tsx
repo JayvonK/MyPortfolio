@@ -147,6 +147,7 @@ const ProjectsPageComponent = () => {
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/javascript.svg" alt="" />
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/bootstrap.svg" alt="" />
                 </div>
+                
             </div>
         </div>
     )
