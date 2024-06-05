@@ -141,13 +141,14 @@ const ProjectsPageComponent = () => {
                 </div>
                 
                 <p className='text-gray-300 lg:text-base text-sm mt-1'>A <span className='text-white font-bold'>fully responsive</span> web app that was created for a local food food shop in hopes of increasing their customers</p>
+                
                 <div className="flex justify-between mt-4">
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/html5.svg" alt="" />
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/css3.svg" alt="" />
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/javascript.svg" alt="" />
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/bootstrap.svg" alt="" />
                 </div>
-                
+
             </div>
         </div>
     )
