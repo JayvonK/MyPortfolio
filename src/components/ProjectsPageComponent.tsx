@@ -104,6 +104,7 @@ const ProjectsPageComponent = () => {
 
 
             <div className='rounded-lg bgCard p-6 border border-zinc-600 '>
+                
                 <a href='https://poke-web-react.vercel.app/' target='_blank'>
                     <img className='rounded-lg mb-3 sm:shadow-lg shadow-md hover:shadow-blue-700' src="/images/pokeweb.png" alt="" />
                 </a>
