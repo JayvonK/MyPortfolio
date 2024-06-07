@@ -94,12 +94,14 @@ const ProjectsPageComponent = () => {
                 </div>
 
                 <p className='text-gray-300 lg:text-base text-sm mt-1'>A <span className='text-white font-bold'> fully responsive static</span> web app that helped me enhance my frontend skills as a new beginner to HTML & CSS </p>
+
                 <div className="flex justify-between mt-4">
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/html5.svg" alt="" />
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/css3.svg" alt="" />
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/bootstrap.svg" alt="" />
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/vercel.svg" alt="" />
                 </div>
+                
             </div>
 
 
