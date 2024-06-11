@@ -125,7 +125,7 @@ const ProjectsPageComponent = () => {
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/typescript.svg" alt="" />
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/tailwindcss.svg" alt="" />
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/vercel.svg" alt="" />
-                </div>
+                </div> 
             </div>
 
             <div className='rounded-lg bgCard p-6 border border-zinc-600 '>
