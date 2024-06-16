@@ -119,6 +119,7 @@ const ProjectsPageComponent = () => {
                         <img className="sm:w-8 w-6 aspect-square object-cover" src="/images/github copy.svg" alt="" />
                     </a>
                 </div>
+                
                 <p className='text-gray-300 lg:text-base text-sm mt-1'>A <span className='text-white font-bold'>fully responsive web app</span> that leverages the PokeApi, to display statistics about pokemon just like a pokedex</p>
                 <div className="flex justify-between mt-4">
                     <img className="sm:w-10 w-8 aspect-square object-cover" src="/images/react.svg" alt="" />
